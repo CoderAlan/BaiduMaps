@@ -78,6 +78,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void initLocation() {
         LocationClientOption option = new LocationClientOption();
+        option.setLocationMode(LocationClientOption.LocationMode.Hight_Accuracy);
         option.setScanSpan(5000);
         option.setIsNeedAddress(true);
         mLocationClient.setLocOption(option);
